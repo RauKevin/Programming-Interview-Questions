@@ -1,3 +1,5 @@
+## Kadane's Algorithm Programming Practice Question
+
 Given an array arr of N integers. Find the contiguous sub-array with maximum sum.
 
 Input:
@@ -23,7 +25,7 @@ Testcase 1: Max subarray sum is 9 of elements (1, 2, 3, -2, 5) which is a contig
 
 
 
-Kadane's Algorithm
+## Kadane's Algorithm
 
 Efficiency: O(n)
 Itterate over array and take the local maximum subarray at each position until you get ot the end.
@@ -33,7 +35,7 @@ At position 0, local max is 1 and subarray is [1], start_position=0;
 At position 1, add -3 to previous sum/subarray and compare. [1]=1 > [1.-3]=-2, so we keep [1] as max
 At position 2, we add the 2 to the current max sum/subarray, that start_position=0, thus [1,-3,2] = 0 and [1,-3,2] < [1] so we disregard this subarray. However, we must also check if the current position alone is greater than the current max, in which case we reset the starting position. [2] > [1]
 
-Short hand / Psuedocode
+# Short hand / Psuedocode
 
 sub_array_start_position = index 0;
 current_max_sum = array[0];
